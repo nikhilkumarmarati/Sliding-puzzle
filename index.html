@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="slidingpuzzle style.css">
+  <script src="javascript.js"></script>
+
+
+  <title>SLIDING PUZZLE</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      sliding puzzle
+    </div>
+
+    <div class="mainbody">
+
+      <div class="leftbox">
+
+        <p style="font-size:1.5rem">Time:</p>
+        <div class="time">
+         <span id="timer">00:00</span></p>
+        </div>
+        
+        <p class="btn" id="startbtn">Start </p>
+
+        <p style="font-size:1.5rem">Move count:</p>
+        <div class="movecount">
+          <span id="count">00</span>
+          </div>
+
+          <label for="tableSize" class="tablelabel">Table Size:</label>
+          <select id="tableSize" class="tableoption">
+          <option value="3">3x3</option>
+          <option value="4">4x4</option>
+          </select>
+      </div>
+
+     <div id="puzzle" style="display: table;">
+   <div id="row1" style="display: table-row;">
+      <div id="cell11" class="tile1" onClick="clickTile(1,1);"></div>
+      <div id="cell12" class="tile2" onClick="clickTile(1,2);"></div>
+      <div id="cell13" class="tile3" onClick="clickTile(1,3);"></div>
+   </div>
+   <div id="row2" style="display: table-row;">
+      <div id="cell21" class="tile4" onClick="clickTile(2,1);"></div>
+      <div id="cell22" class="tile5" onClick="clickTile(2,2);"></div>
+      <div id="cell23" class="tile6" onClick="clickTile(2,3);"></div>
+   </div>
+   <div id="row3" style="display: table-row;">
+      <div id="cell31" class="tile7" onClick="clickTile(3,1);"></div>
+      <div id="cell32" class="tile8" onClick="clickTile(3,2);"></div>
+      <div id="cell33" class="tile9" onClick="clickTile(3,3);"></div>
+   </div>
+</div>
+
+      <div class="rightbox">
+        <p  id="pausebtn" class="btn" disabled>Pause</p>
+
+        <p style="font-size:1.5rem">Best times:</p>
+          <div class="besttimes">
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="btndiv">
+      <p  id="newgamebtn" class="btn">New Game</p>
+    </div>
+
+  </div>
+</body>
+</html>

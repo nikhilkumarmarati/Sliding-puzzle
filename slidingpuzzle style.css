@@ -1,0 +1,186 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.container{
+  width:100%;
+  padding:15px;
+  background-color:rgb(90, 90, 239);
+}
+
+.header{
+  padding:10px;
+  font-size: 5em;
+  background-color: aqua;
+  transform: uppercase;
+  text-align: center;
+}
+
+.mainbody{
+  padding:10px;
+  background-color: bisque;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+
+.leftbox{
+  background-color: azure;
+  margin:10px 0 10px 10px;
+  padding:5px;
+  width:20%;
+  border:2px solid black;
+}
+
+.time{
+  border:2px solid black;
+  font-size:1.5rem;
+  text-align:center;
+}
+  
+.movecount{
+  border:2px solid black;
+  font-size:1.5rem;
+  text-align:center;
+}
+
+.tablelabel,
+.tableoption{
+  font-size: 1.5rem;
+  margin:80px 5px 10px 25px;
+}
+
+#puzzle{
+  background-color:rgb(196, 180, 157);
+  margin: 0 auto;
+  padding:15px;
+  width:40%;
+  height:70vh;
+  border:2px solid black;
+  display: table;
+}
+
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9, .tile10,.tile11,.tile12,.tile13,.tile14,.tile15,.tile16 {
+  background-color: white;
+  display: table-cell;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.tile1 {background-image: url("images/number1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile2 {background-image: url("images/number2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile3 {background-image: url("images/number3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+                      background-position: center;}
+.tile4 {background-image: url("images/number4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile5 {background-image: url("images/number5.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile6 {background-image: url("images/number6.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile7 {background-image: url("images/number7.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile8 {background-image: url("images/number8.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile9 {background-image: url("images/blackbox.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile10 {background-image: url("images/number10.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile11{background-image: url("images/number11.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile12{background-image: url("images/number12.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+
+.tile13{background-image: url("images/number13.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile14{background-image: url("images/number14.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile15{background-image: url("images/number15.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+.tile16{background-image: url("images/number9.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+ .rightbox{
+  background-color: aliceblue;
+  margin:10px;
+  padding:5px;
+  width:20%;
+  border:2px solid black;
+}
+
+.btndiv{
+  margin:0 auto;
+  width:15%;
+}
+
+.btn{
+  border: 2px solid black;;
+  text-align: center;
+  color:inherit;
+  font-size:1.25em;
+  cursor:pointer;
+}
+
+.btn:hover{
+  box-shadow: 5px black;
+}
+
+#newgamebtn{
+  padding:5px;
+  background:white;
+  transition: 500ms;
+}
+
+#newgamebtn:hover{
+  background:rgba(0,0,0,0.8);
+  color: white;
+}
+
+#pausebtn{
+  margin:50px 0 150px 0;
+  padding:5px;
+  transition: 250ms;
+}
+
+.besttimes{
+  border:2px solid black;
+  font-size:1.5rem;
+  text-align:center;
+}
